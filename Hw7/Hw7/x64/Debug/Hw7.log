@@ -1,0 +1,3 @@
+﻿  Numbers.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.41.34120\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+  Hw7.vcxproj -> C:\Users\Genetal\C-\Hw7\x64\Debug\Hw7.exe

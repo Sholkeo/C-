@@ -1,0 +1,5 @@
+﻿  n1.1.cpp
+  n2.2.cpp
+  Создание кода...
+n2.2.obj : error LNK2005: main уже определен в n1.1.obj
+C:\Users\Genetal\C-\Homework\x64\Debug\Homework.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

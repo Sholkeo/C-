@@ -1,0 +1,3 @@
+﻿  Numbers.cpp
+C:\Users\Genetal\C-\Hw6\Numbers.cpp(111,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Hw6.vcxproj -> C:\Users\Genetal\C-\Hw6\x64\Debug\Hw6.exe

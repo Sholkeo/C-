@@ -1,0 +1,5 @@
+﻿  Numbers.cpp
+C:\Users\Genetal\C-\Hw5\Numbers.cpp(19,22): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\Genetal\C-\Hw5\Numbers.cpp(78,18): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Genetal\C-\Hw5\Numbers.cpp(159,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Hw5.vcxproj -> C:\Users\Genetal\C-\Hw5\x64\Debug\Hw5.exe

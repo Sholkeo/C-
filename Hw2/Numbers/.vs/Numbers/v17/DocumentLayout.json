@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Genetal\\C-\\Hw2\\Numbers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1739C131-1F60-494E-B113-5357BA9C38D8}|Numbers.vcxproj|C:\\Users\\Genetal\\C-\\Hw2\\Numbers\\Numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1739C131-1F60-494E-B113-5357BA9C38D8}|Numbers.vcxproj|solutionrelative:Numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Numbers.cpp",
+              "DocumentMoniker": "C:\\Users\\Genetal\\C-\\Hw2\\Numbers\\Numbers.cpp",
+              "RelativeDocumentMoniker": "Numbers.cpp",
+              "ToolTip": "C:\\Users\\Genetal\\C-\\Hw2\\Numbers\\Numbers.cpp",
+              "RelativeToolTip": "Numbers.cpp",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAMUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T12:27:54.932Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
