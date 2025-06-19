@@ -6,6 +6,8 @@
 #include <fstream>
 #include <string>
 #include <functional> 
+#include <climits>
+#include <limits>
 
 using namespace std;
 
@@ -76,9 +78,168 @@ void number1() {
 	listDirectory();
 }	
 
-void number2() {
+const int MAX_SIZE = 100;
 
+struct Request {
+	int priority; 
+	int data;     
+};
+
+class PriorityQueue {
+private:
+	Request queue[MAX_SIZE]; 
+	int front;              
+	int rear;               
+	int size;               
+
+public:
+	PriorityQueue() : front(0), rear(-1), size(0) {}
+
+	void enqueue(int data, int priority) {
+		if (isFull()) {
+			cout << "Очередь переполнена!\n";
+			return;
+		}
+
+		if (isEmpty()) {
+			rear = front;
+			queue[rear] = { priority, data };
+			size++;
+			return;
+		}
+
+		int insertPos = rear + 1;
+		if (insertPos == MAX_SIZE) {
+			insertPos = 0; 
+		}
+
+		queue[insertPos] = { priority, data };
+		rear = insertPos;
+		size++;
+	}
+
+	Request dequeue() {
+		if (isEmpty()) {
+			cout << "Очередь пуста!\n";
+			return { INT_MAX, -1 };
+		}
+
+		int highestPriority = INT_MAX;
+		int highestPriorityPos = -1;
+
+		for (int i = 0; i < size; ++i) {
+			int currentPos = (front + i) % MAX_SIZE;
+			if (queue[currentPos].priority < highestPriority) {
+				highestPriority = queue[currentPos].priority;
+				highestPriorityPos = currentPos;
+			}
+		}
+
+		Request highestPriorityRequest = queue[highestPriorityPos];
+
+		for (int i = highestPriorityPos; i != rear; i = (i + 1) % MAX_SIZE) {
+			queue[i] = queue[(i + 1) % MAX_SIZE];
+		}
+		rear = (rear - 1 + MAX_SIZE) % MAX_SIZE;
+		size--;
+
+		return highestPriorityRequest;
+	}
+
+	bool isEmpty() const {
+		return size == 0;
+	}
+
+	bool isFull() const {
+		return size == MAX_SIZE;
+	}
+	
+	void printQueue() const {
+		if (isEmpty()) {
+			cout << "Очередь пуста.\n";
+			return;
+		}
+
+		cout << "Текущая очередь:\n";
+		for (int i = 0; i < size; ++i) {
+			int currentPos = (front + i) % MAX_SIZE;
+			cout << "Data: " << queue[currentPos].data
+				<< ", Priority: " << queue[currentPos].priority << "\n";
+		}
+	}
+};
+
+void clearInputBuffer() {
+	std::cin.clear();
+	#ifdef max
+	#undef max
+	#endif
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
+
+void number2() {
+	PriorityQueue pq;
+	int choice, data, priority;
+
+	while (true) {
+		cout << "\nМеню:\n"
+			<< "1. Добавить запрос (enqueue)\n"
+			<< "2. Извлечь запрос (dequeue)\n"
+			<< "3. Показать очередь\n"
+			<< "4. Выход\n"
+			<< "Выберите действие: ";
+
+		if (!(std::cin >> choice)) {
+			clearInputBuffer();
+			std::cout << "Ошибка ввода. Попробуйте снова.\n";
+			continue;
+		}
+
+		switch (choice) {
+		case 1:
+			std::cout << "Введите данные (число): ";
+			if (!(std::cin >> data)) {
+				clearInputBuffer();
+				std::cout << "Ошибка ввода данных!\n";
+				break;
+			}
+
+			std::cout << "Введите приоритет (чем меньше, тем выше): ";
+			if (!(std::cin >> priority)) {
+				clearInputBuffer();
+				std::cout << "Ошибка ввода приоритета!\n";
+				break;
+			}
+
+			pq.enqueue(data, priority);
+			std::cout << "Запрос добавлен.\n";
+			break;
+
+		case 2: 
+			if (pq.isEmpty()) {
+				std::cout << "Очередь пуста!\n";
+			}
+			else {
+				Request r = pq.dequeue();
+				std::cout << "Извлечено: Data = " << r.data
+					<< ", Priority = " << r.priority << "\n";
+			}
+			break;
+
+		case 3: 
+			pq.printQueue();
+			break;
+
+		case 4: 
+			std::cout << "Завершение работы.\n";
+			return;
+
+		default:
+			std::cout << "Неверный выбор. Попробуйте снова.\n";
+		}
+	}
+}
+
 
 void generateCombinations(const string& charset, int maxLength, const string& realPassword) {
 	ofstream outFile("combinations.txt", ios::app);
