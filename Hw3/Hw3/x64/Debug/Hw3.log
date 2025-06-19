@@ -1,4 +1,5 @@
 ﻿  Numbers.cpp
-C:\Users\Genetal\C-\Hw3\Numbers.cpp(13,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Genetal\C-\Hw3\Numbers.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Genetal\C-\Hw3\Numbers.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Genetal\C-\Hw3\Numbers.cpp(50,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Genetal\C-\Hw3\Numbers.cpp(112,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Hw3.vcxproj -> C:\Users\Genetal\C-\Hw3\x64\Debug\Hw3.exe
