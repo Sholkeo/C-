@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Genetal\\C-\\Hw3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Genetal\\C-\\Hw3\\NUmbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUmbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{66CD8F1A-ED01-4ED8-8F89-A625CE0DE03C}|Hw3.vcxproj|C:\\Users\\Genetal\\C-\\Hw3\\Numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{66CD8F1A-ED01-4ED8-8F89-A625CE0DE03C}|Hw3.vcxproj|solutionrelative:Numbers.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NUmbers.cpp",
+              "Title": "Numbers.cpp",
               "DocumentMoniker": "C:\\Users\\Genetal\\C-\\Hw3\\NUmbers.cpp",
               "RelativeDocumentMoniker": "NUmbers.cpp",
               "ToolTip": "C:\\Users\\Genetal\\C-\\Hw3\\NUmbers.cpp",
               "RelativeToolTip": "NUmbers.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-12T09:22:51.35Z",
+              "WhenOpened": "2025-06-19T11:34:39.951Z",
               "EditorCaption": ""
             }
           ]

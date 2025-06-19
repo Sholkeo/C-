@@ -14,7 +14,9 @@ void number1() {
 	srand(time(0));
 	for (int i = 0; i < sizeAlpf; i++) {
 		int x = 0 + rand() % 61;
-		userAlpf += alpflow[x];
+		if (userAlpf.find(alpflow[x]) == string::npos ) {
+			userAlpf += alpflow[x];
+		}
 	}
 
 	cout << "Пользовательский алфавит: " << endl;
